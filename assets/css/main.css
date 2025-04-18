@@ -63,6 +63,7 @@
     --bs-bg-opacity: 1 !important;
     --bs-gray-dark: 166, 209, 201;
     --bs-body-font-size: 0.875rem;
+    --bs-table-bg : 228, 237, 236;
 }
 html {
     position: relative;
@@ -1738,6 +1739,14 @@ svg {
 .btn-secondary{
     color: var(--bs-white);
 }
+.btn-secondary svg, .btn-primary svg,.btn-info svg,.btn-danger svg,.btn-success svg,.btn-outline-secondary svg{
+    fill:rgba(var(--bs-white-rgb), .3);
+    color:var(--bs-white)  
+}
+ .btn-secondary:hover svg, .btn-outline-secondary:hover svg, .btn-check:focus+.btn-secondary svg, .btn-secondary:focus svg{
+    fill:rgba(var(--bs-secondary-rgb), .3);
+    color:var(--bs-secondary)   
+}
 .btn-secondary,
 .btn-secondary:hover,
 .btn-outline-secondary:hover,
@@ -2048,6 +2057,9 @@ svg {
 .fill-success {
     fill: var(--bs-success);
 }
+.fill-light {
+    fill: var(--bs-light);
+}
 
 .fill-info {
     fill: var(--bs-info);
@@ -2163,31 +2175,31 @@ svg {
     background-color: var(--bs-primary) !important;
 }
 .tab-custom-bg .nav-item .nav-info{
-    background-color: rgba(var(--bs-info-rgb), .2);
+    background-color: rgba(var(--bs-info-rgb), .2) !important;
 }
 .tab-custom-bg .nav-item .nav-info.active,.tab-custom-bg .nav-item .nav-info:hover{
-    background-color: rgba(var(--bs-info-rgb), 1);
+    background-color: rgba(var(--bs-info-rgb), 1) !important;
     color: var(--bs-white);
 }
 .tab-custom-bg .nav-item .nav-primary{
-    background-color: rgba(var(--bs-primary-rgb), .2);
+    background-color: rgba(var(--bs-primary-rgb), .2) !important;
 }
 .tab-custom-bg .nav-item .nav-primary:hover,.tab-custom-bg .nav-item .nav-primary.active{
-    background-color: rgba(var(--bs-primary-rgb), 1);
+    background-color: rgba(var(--bs-primary-rgb), 1) !important;
     color: var(--bs-white);
 }
 .tab-custom-bg .nav-item .nav-success{
-    background-color: rgba(var(--bs-success-rgb), .2);
+    background-color: rgba(var(--bs-success-rgb), .2) !important;
 }
 .tab-custom-bg .nav-item .nav-success.active,.tab-custom-bg .nav-item .nav-success:hover{
-    background-color: rgba(var(--bs-success-rgb), 1);
+    background-color: rgba(var(--bs-success-rgb), 1) !important;
     color: var(--bs-white);
 }
 .tab-custom-bg .nav-item .nav-tertiary{
-    background-color: rgba(var(--bs-tertiary-rgb), .2);
+    background-color: rgba(var(--bs-tertiary-rgb), .2) !important;
 }
 .tab-custom-bg .nav-item .nav-tertiary.active,.tab-custom-bg .nav-item .nav-tertiary:hover{
-    background-color: rgba(var(--bs-tertiary-rgb), 1);
+    background-color: rgba(var(--bs-tertiary-rgb), 1) !important;
     color: var(--bs-white);
 }
 .tab-custom-bg .nav-item .nav-info svg,.tab-custom-bg .nav-item .nav-success svg,.tab-custom-bg .nav-item .nav-primary svg,.tab-custom-bg .nav-item .nav-tertiary svg{
@@ -2707,14 +2719,14 @@ stroke-width: 2.5;
 .nav-tabs>li>a {
     font-weight: 400;
 }
-
+/* 
 .nav-pills .nav-link.active {
     font-weight: 500;
-}
+} */
 
 .table-active,
 .table-hover>tbody>tr:hover>* {
-    --bs-table-accent-bg: rgba(var(--bs-primary-rgb), .10);
+    --bs-table-accent-bg: rgba(var(--bs-primary-rgb), .04);
     color: var(--bs-body-color);
 }
 

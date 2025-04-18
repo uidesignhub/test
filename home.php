@@ -71,7 +71,7 @@
                                                                     </div>
                                                                 </div>
                                                             </form>
-                                                            <ul class="nav  nav-pills  tab-custom-bg" role="tablist">
+                                                            <ul class="nav  nav-pills gap-2" role="tablist">
                                                                 <li class="nav-item">
                                                                     <a class="nav-link active" data-bs-toggle="tab"
                                                                         href="#all" role="tab">
@@ -241,7 +241,7 @@
                                 </div>
 
                                 <div class="col-sm-12">
-                                    <ul class="nav  nav-pills nav-tabs-custom tab-custom-bg justify-content-between gap-3"
+                                    <ul class="nav  nav-pills tab-custom-bg justify-content-between gap-3"
                                         role="tablist">
                                         <li class="nav-item  flex-fill">
                                             <a class="nav-link nav-info d-flex align-items-center" data-bs-toggle="tab"
@@ -281,7 +281,7 @@
                                     <div class="tab-content p-3 px-0 mt-3 text-muted">
                                         <div class="tab-pane active" id="survey" role="tabpanel">
                                             <div class="table-responsive">
-                                                <table class="table align-middle table-nowrap table-check">
+                                                <table class="table align-middle table-nowrap table-check table-hover">
                                                     <thead class="table-light">
                                                         <tr>
                                                             <th class="align-middle opacity-50 ps-sm-4">Survey name</th>
