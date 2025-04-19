@@ -167,7 +167,7 @@
         <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body px-4">
         <div class="d-flex align-items-center">
             <div class="me-3  h-44 w-44 rounded-circle overflow-hidden ">
                 <img src="assets/images/users/avatar.jpg" class="h-100 w-100 object-cover" alt="">
@@ -181,19 +181,19 @@
         <div class="my-4">
             <h6 class="f-600">Organization</h6>
             <div class="my-4">
-                <a class="dropdown-item py-2" href="#">
+                <a class="dropdown-item p-2" href="#">
                     <i data-lucide="user-cog"></i>
                     Admin Setting
                 </a>
-                <a class="dropdown-item py-2" href="#">
+                <a class="dropdown-item p-2" href="#">
                     <i data-lucide="square-user-round"></i>
                     Organization Members
                 </a>
-                <a class="dropdown-item py-2" href="#p">
+                <a class="dropdown-item p-2" href="#p">
                     <i data-lucide="newspaper"></i>
                     Plan & Billing
                 </a>
-                <a class="dropdown-item py-2" href="#">
+                <a class="dropdown-item p-2" href="#">
                     <i data-lucide="trello"></i>
                     Developer Apps
                 </a>

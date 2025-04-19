@@ -75,7 +75,7 @@
                                                 class="h-100 w-100 object-cover rounded-circle" alt="">
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col mt-sm-5">
                                         <div class="d-flex align-items-end justify-content-between">
                                             <div>
                                              <h6 class="fw-bold">Ajeeshmon</h6>  
@@ -152,42 +152,9 @@
             <h5 class="offcanvas-title" id="offcanvasSurveyLabel"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body px-4">
             <h6 class="f-600 mb-3">Create New Survey</h6>
-            <ul class="nav  nav-pills bg-light rounded justify-content-between" role="tablist">
-                <li class="nav-item  flex-fill">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#Details" role="tab">
-                        <div class="f-500">Basic details</div>
-                    </a>
-                </li>
-                <li class="nav-item  flex-fill">
-                    <a class="nav-link" data-bs-toggle="tab" href="#Pages" role="tab">
-                        <div class="f-500">Pages</div>
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content p-3 px-0 mt-3">
-                <div class="tab-pane active" id="Details" role="tabpanel">
-                    <div class="row">
-                        <div class="col-auto">
-                            <div class="inputRadio">
-                                <input id="option1" name="option1" type="checkbox" />
-                                <label for="option1" class="">Blank Survey</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="inputRadio position-relative">
-                                <button class="btn btn-sm btn-primary  position-absolute end-0 m-2 z-1" type="button">
-                                    Browse
-                                    <input class="form-control w-100 h-100 position-absolute end-0 opacity-0"
-                                        type="file" id="formFile" style=" width: 0;">
-                                </button>
-                                <input id="option2" name="option2" type="checkbox" />
-                                <label for="option2" class="">Use Template</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
+            <div>
                         <div class="mb-3">
                             <label class="form-label" for="formrow-firstname-input">Survey name</label>
                             <input type="text" class="form-control" id="survey namet" placeholder="Enter survey Name">
@@ -205,21 +172,15 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="formrow-firstname-input">Survey Description name</label>
+                            <label class="form-label" for="formrow-firstname-input">Billing Address</label>
                             <textarea class="form-control" rows="4" placeholder="Enter About your description"
                                 value="About your description"></textarea>
                         </div>
                     </div>
-                </div><!-- end tab pane -->
-                <div class="tab-pane " id="Pages" role="tabpanel">
-                    Same t
-                </div><!-- end tab pane -->
-            </div>
 </div>
 <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 p-4">
-            
             <button type="button" class="btn btn-light"> cancel</button>
-            <button type="button" class="btn btn-secondary"> Create Now</button>
+            <button type="button" class="btn btn-secondary">Save</button>
         </div>
         </div>
 

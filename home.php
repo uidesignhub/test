@@ -44,10 +44,10 @@
                             <div class="card-body">
                                 <div class="row mb-2">
 
-                                    <div class="col-sm-8 col-lg-8 col-12">
+                                    <div class="col col-lg-8">
                                         <div class="d-sm-flex gap-3 mb-3">
 
-                                            <div class="dropdown flex-fill">
+                                            <div class="dropdown flex-fill w-100 mb-3 mb-sm-0">
                                                 <button type="button"
                                                     class="btn border w-100 d-flex justify-content-between"
                                                     id="page-header-notifications-dropdown" data-bs-toggle="dropdown"
@@ -95,7 +95,7 @@
                                                         <!-- Tab panes -->
                                                         <div class="tab-content">
                                                             <div class="tab-pane active" id="all" role="tabpanel">
-                                                                <a href="" class="text-reset dropdown-item p-3">
+                                                                <div class="text-reset dropdown-item p-3">
                                                                     <div class="d-flex  align-items-center">
                                                                         <div class="col-7">
                                                                             <div class="text-sm f-500 text-dark">
@@ -105,12 +105,13 @@
                                                                                 Created on 11 April,2025</div>
                                                                         </div>
                                                                         <button type="button"
-                                                                            class="btn btn-sm btn-primary align-self-end ms-auto"><i
+                                                                            class="btn btn-sm btn-primary align-self-end ms-auto " data-bs-toggle="offcanvas" data-bs-target="#offcanvasInvite"
+                                                                            aria-controls="offcanvasRight"><i
                                                                                 data-lucide="user-plus"
                                                                                 class="me-1 w-16"></i> Invite</button>
                                                                     </div>
-                                                                </a>
-                                                                <a href=""
+</div>
+                                                                <div
                                                                     class="text-reset dropdown-item border-top p-3">
                                                                     <div class="d-flex  align-items-center">
                                                                         <div class="col-7">
@@ -125,7 +126,7 @@
                                                                                 data-lucide="user-plus"
                                                                                 class="me-1 w-16"></i> Invite</button>
                                                                     </div>
-                                                                </a>
+</div>
                                                             </div>
                                                             <div class="tab-pane" id="private" role="tabpanel">private
                                                                 tab</div>
@@ -142,7 +143,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="d-flex flex-fill w-100 gap-3">
                                             <div class="dropdown">
                                                 <button class="btn btn-light dropdown-toggle" type="button"
                                                     id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -203,6 +204,8 @@
                                                     </div>
                                                 </div>
                                             </div>
+ 
+
                                             <form class="flex-fill">
                                                 <div class="search-box  d-block w-100">
                                                     <div class="position-relative">
@@ -214,7 +217,7 @@
                                                 </div>
                                             </form>
                                         </div>
-
+</div>
                                     </div>
                                     <div class="col-lg-auto ms-lg-auto col-sm-auto">
                                         <div class="dropdown icon-dropdown">
@@ -374,13 +377,13 @@
         </div>
     </div>
     <!-- END layout -->
+     <!--Right side nav - create survey -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSurvey" aria-labelledby="offcanvasSurveyLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasSurveyLabel"></h5>
+            <h5 class="offcanvas-title" id="offcanvasSurveyLabel">Create New Survey</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <h6 class="f-600 mb-3">Create New Survey</h6>
             <ul class="nav  nav-pills bg-light rounded justify-content-between" role="tablist">
                 <li class="nav-item  flex-fill">
                     <a class="nav-link active" data-bs-toggle="tab" href="#Details" role="tab">
@@ -402,7 +405,7 @@
                                 <label for="option1" class="">Blank Survey</label>
                             </div>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col">
                             <div class="inputRadio position-relative">
                                 <button class="btn btn-sm btn-primary  position-absolute end-0 m-2 z-1" type="button">
                                     Browse
@@ -442,6 +445,70 @@
                     Same t
                 </div><!-- end tab pane -->
             </div>
+</div>
+<div class="d-flex align-items-center justify-content-end flex-wrap gap-3 p-4">
+            
+            <button type="button" class="btn btn-light"> cancel</button>
+            <button type="button" class="btn btn-secondary"> Create Now</button>
+        </div>
+        </div>
+     <!--Right side nav - Invite member -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasInvite" aria-labelledby="offcanvasInviteLabel">
+        <div class="offcanvas-header">
+            <div class="">
+            <h5 class="offcanvas-title" id="offcanvasInviteLabel">Invite New Members</h5>
+            <p>Sent to the respective members.</p>
+</div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+         
+        <div>
+                        <div class="mb-3">
+                            <label class="form-label" for="formrow-firstname-input">Email </label>
+                            <input type="text" class="form-control" id="member mail id" placeholder="Add workspace members by email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="formrow-firstname-input">Access</label>
+                            <select class="form-select">
+                                <option>Editor</option>
+                                <option>Large select</option>
+                                <option>Small select</option>
+                            </select>
+                        </div>
+                        <div class="mt-5">
+                        <h6 class="f-600 mb-3">Workspace member (1)</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="f-600">Ajimon</div>
+                                <div class="text-muted">mail@gmail.com</div>
+                            </div>
+                            <div class="dropdown">
+                                                <button class="btn border w-100 d-flex justify-content-between align-items-center" type="button"
+                                                    id="memberview" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <div class="">Owner</div>
+                                                    <i data-lucide="chevron-down" class="h-18 ms-2"></i>
+                                                </button>
+                                                <div class="dropdown-menu p-3 mw-320"
+                                                    aria-labelledby="memberview">
+                                                    <h6 class="f-600 mb-3">Ajimon</h6>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="radio" name="formRadios"
+                                                            id="formRadios1" checked>
+                                                        <label class="form-check-label" for="formRadios1">
+                                                            Owner
+                                                            <small class="text-nowrap text-muted d-block">
+                                                            Owner Can create, manage forms and responses.</small>
+                                                            <small class="text-nowrap text-muted d-block"> Can manage members, and delete workspace.
+</small>
+                                                        </label>
+                                                    </div>
+</div>
+                           </div>
+                        </div>
+</div>
+                    </div>
 </div>
 <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 p-4">
             

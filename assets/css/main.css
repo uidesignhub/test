@@ -1186,7 +1186,7 @@ input[switch=dark]:checked+label {
 }
 
 .auth-bg {
-    background-image: url(https://media.istockphoto.com/id/1312840107/photo/shot-of-a-group-of-businesspeople-raising-their-hands-during-a-presentation.jpg?s=2048x2048&w=is&k=20&c=wMsS49QJvM16Vgbg02B_s0MhkOfSI5L4yRL3AdL3vlI=);
+    background-image: url("../../assets/images/auth.svg");
 
 }
 
@@ -1657,7 +1657,7 @@ svg {
 .card,
 .modal-content,
 .dropdown-menu,.accordion-item:last-of-type,.accordion-item:first-of-type {
-    border-radius: .625rem;
+    border-radius: .375rem;
 }
 
 .card {
