@@ -315,13 +315,11 @@
                                                             </td>
                                                             <td>
                                                                 <div class="d-flex gap-3">
-                                                                    <a href="javascript:void(0);" class="text-gray"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#Productview"><i
+                                                                    <a href="javascript:void(0);" class="btn btn-link p-1"><i
                                                                             data-lucide="eye"></i></a>
-                                                                    <a href="edit-product.php" class="text-gray"><i
-                                                                            data-lucide="pencil"></i></a>
-                                                                    <a href="javascript:void(0);" class="text-gray"><i
+                                                                    <a href="survey-edit.php" class="btn btn-link p-1"><i
+                                                                            data-lucide="pencil-line"></i></a>
+                                                                    <a href="javascript:void(0);" class="btn btn-link p-1"><i
                                                                             data-lucide="trash-2"></i></a>
                                                                 </div>
                                                             </td>
