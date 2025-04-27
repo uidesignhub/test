@@ -117,6 +117,7 @@
         </div>
     </div>
     <!-- END layout -->
+    <!-- Offcanvas Settings -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSurveyLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasSurveyLabel">Survey Setting</h5>
@@ -325,153 +326,242 @@
                         </div>
                     </div>
                 </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#SurveySetting" aria-expanded="false" aria-controls="SurveySetting">
-                        SurveySetting
-                    </button>
-                </h2>
-                <div id="SurveySetting" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="mb-3">
-                            <label class="form-label" for="formrow-firstname-input">Survey Category</label>
-                            <select class="form-select">
-                                <option>Category</option>
-                                <option>Large select</option>
-                                <option>Small select</option>
-                            </select>
-                        </div>
-                        <div class="d-flex flex-column gap-2">
-                            <div class="form-check form-check-inline me-0">
-                                <input class="form-check-input" type="checkbox" id="formCheck1">
-                                <label class="form-check-label" for="formCheck1">
-                                    Show progress bar
-                                </label>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#SurveySetting" aria-expanded="false" aria-controls="SurveySetting">
+                            SurveySetting
+                        </button>
+                    </h2>
+                    <div id="SurveySetting" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <label class="form-label" for="formrow-firstname-input">Survey Category</label>
+                                <select class="form-select">
+                                    <option>Category</option>
+                                    <option>Large select</option>
+                                    <option>Small select</option>
+                                </select>
                             </div>
-                            <div class="form-check form-check-inline me-0">
-                                <input class="form-check-input" type="checkbox" id="formCheck2">
-                                <label class="form-check-label" for="formCheck2">
-                                    Show review before complete
-                                </label>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="form-check form-check-inline me-0">
+                                    <input class="form-check-input" type="checkbox" id="formCheck1">
+                                    <label class="form-check-label" for="formCheck1">
+                                        Show progress bar
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline me-0">
+                                    <input class="form-check-input" type="checkbox" id="formCheck2">
+                                    <label class="form-check-label" for="formCheck2">
+                                        Show review before complete
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline me-0">
+                                    <input class="form-check-input" type="checkbox" id="formCheck3">
+                                    <label class="form-check-label" for="formCheck3">
+                                        Show back button
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline me-0">
+                                    <input class="form-check-input" type="checkbox" id="formCheck4">
+                                    <label class="form-check-label" for="formCheck4">
+                                        Proceed to next page automatically
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline me-0">
-                                <input class="form-check-input" type="checkbox" id="formCheck3">
-                                <label class="form-check-label" for="formCheck3">
-                                    Show back button
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline me-0">
-                                <input class="form-check-input" type="checkbox" id="formCheck4">
-                                <label class="form-check-label" for="formCheck4">
-                                    Proceed to next page automatically
-                                </label>
+                            <div class="mt-3">
+                                <label class="form-label" for="formrow-firstname-input">Survey Availablity</label>
+                                <div class=" opacity-50 border border-primary rounded p-3 mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="f-600">Leave survey open to collect responses</div>
+                                        <i class="text-white fill-primary w-32 h-32" data-lucide="circle-check"></i>
+                                    </div>
+                                </div>
+                                <div class=" opacity-100 border border-primary rounded p-3">
+                                    <div class="d-flex  justify-content-between  align-items-start">
+                                        <div class="f-600">Leave survey open to collect responses</div>
+                                        <i class="text-white fill-primary w-32 h-32" data-lucide="circle-check"></i>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6 mb-2">
+                                            <label class="form-label f-500" for="formrow-firstname-input">Start
+                                                Date</label>
+                                            <input class="form-control" type="date" value="2019-08-19" id="date">
+                                        </div>
+                                        <div class="col-6 mb-2">
+                                            <label class="form-label f-500" for="formrow-firstname-input">Start
+                                                Time</label>
+                                            <input class="form-control" type="time" value="13:45:00" id="time">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label f-500" for="formrow-firstname-input">End
+                                                Date</label>
+                                            <input class="form-control" type="date" value="2019-08-19" id="date">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label f-500" for="formrow-firstname-input">End
+                                                Time</label>
+                                            <input class="form-control" type="time" value="13:45:00" id="time">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#NavSetting" aria-expanded="false" aria-controls="NavSetting">
-                        NavSetting
-                    </button>
-                </h2>
-                <div id="NavSetting" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">NavSetting</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#Security" aria-expanded="false" aria-controls="Security">
-                        Security
-                    </button>
-                </h2>
-                <div id="Security" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Security</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 p-4">
-        <button type="button" class="btn btn-light"> cancel</button>
-        <button type="button" class="btn btn-secondary">Apply</button>
-    </div>
-    </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#NavSetting" aria-expanded="false" aria-controls="NavSetting">
+                            NavSetting
+                        </button>
+                    </h2>
+                    <div id="NavSetting" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <label for="validationCustom01" class="form-label">Add More Button</label>
+                            <div class="dropdown mb-2">
+                                <button type="button" class="btn border w-100 d-flex justify-content-between"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="">Choose</span>
+                                    <i data-lucide="chevron-down" class="h-20"></i>
+                                </button>
+                                <div class="dropdown-menu drobdown-menu-lg dropdown-menu-end px-2">
+                                    <div data-simplebar style="max-height: 250px;" class="w-100">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="formRadios"
+                                                    id="icon-1" checked>
+                                                <label class="form-check-label" for="icon-1">
+                                                    Title name
+                                                </label>
+                                            </div>
+                                            <button class="btn btn-sm btn-light"><i data-lucide="trash"></i></button>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="formRadios"
+                                                    id="icon-1" checked>
+                                                <label class="form-check-label" for="icon-1">
+                                                    Title name
+                                                </label>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-light"><i
+                                                    data-lucide="flag"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 mt-3">
+                                        <button class="btn btn-light">Cancel</button>
+                                        <button class="btn btn-primary">Done</button>
+                                    </div>
+                                </div>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-6">
+                                    <label for="validationCustom01" class="form-label">Previous Button</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" id="validationCustom01" value="|"
+                                            required placeholder="Enter name">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="radio" name="formRadios"
+                                                id="formRadios1" checked="">
+                                            <label class="form-check-label" for="formRadios1">
+                                                Button With Text
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="validationCustom02" class="form-label">Nex Button</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control position-relative"
+                                            id="validationCustom02" value="Next" required>
+                                        <div class="position-absolute end-0 top-0 m-1">
+                                            <i data-lucide="circle-check" class="text-white fill-primary w-30 h-30"></i>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="radio" name="formRadios"
+                                                id="formRadios1" checked="">
+                                            <label class="form-check-label" for="formRadios1">
+                                                Button With Text
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="validationCustom01" class="form-label">Submit Button</label>
+                                    <button class="btn btn-outline-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#Security" aria-expanded="false" aria-controls="Security">
+                            Security
+                        </button>
+                    </h2>
+                    <div id="Security" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <label class="form-label" for="formrow-firstname-input">Survey Access</label>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                    checked>
+                                <label class="btn btn-outline-primary" for="btnradio1">Available to Anyone</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio2">Available to Anyone</label>
+
+                            </div>
+                            <div class="mt-3">
+                                <label class="form-label" for="formrow-firstname-input">Password Protection</label>
+                                <div class=" opacity-50 border border-primary rounded p-3 mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="f-500">Activate Password</div>
+                                        <i class="text-white fill-primary w-32 h-32" data-lucide="circle-check"></i>
+                                    </div>
+                                </div>
+                                <div class=" opacity-100 border border-primary rounded p-3">
+                                    <div class="d-flex  justify-content-between  align-items-start">
+                                        <div class="f-500">Activate Password</div>
+                                        <i class="text-white fill-primary w-32 h-32" data-lucide="circle-check"></i>
+                                    </div>
+                                    <div class="position-relative my-2">
+                                        <input type="password" class="form-control" id="password-input"
+                                            placeholder="Enter Password" fdprocessedid="19vgf">
+                                        <button type="button" class="btn btn-link position-absolute end-0 top-0"
+                                            id="password-addon" fdprocessedid="fjbwz">
+                                            <i data-lucide="eye" class="h-20"></i>
+                                            <!-- <i data-lucide="eye-off"></i> -->
+                                        </button>
+                                        <small class="text-muted">*Please remember this password for access this
+                                            survey</small>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                        <label class="form-check-label" for="formCheck1">
+                                            Prevent Multiple Submissions
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="offcanvas-body px-4">
-            <div class="d-flex align-items-center">
-                <div class="me-3  h-44 w-44 rounded-circle overflow-hidden ">
-                    <img src="assets/images/users/avatar.jpg" class="h-100 w-100 object-cover" alt="">
-                </div>
-                <div class="flex-grow-1">
-                    <a href="#" class="f-600 text-dark text-base">Ajeeshmon</a>
-                    <div class="text-muted text-xs">UI Developer</div>
-                </div>
-            </div>
-            <hr>
-            <div class="my-4">
-                <h6 class="f-600">Organization</h6>
-                <div class="my-4">
-                    <a class="dropdown-item p-2" href="#">
-                        <i data-lucide="user-cog"></i>
-                        Admin Setting
-                    </a>
-                    <a class="dropdown-item p-2" href="#">
-                        <i data-lucide="square-user-round"></i>
-                        Organization Members
-                    </a>
-                    <a class="dropdown-item p-2" href="#p">
-                        <i data-lucide="newspaper"></i>
-                        Plan & Billing
-                    </a>
-                    <a class="dropdown-item p-2" href="#">
-                        <i data-lucide="trello"></i>
-                        Developer Apps
-                    </a>
-                </div>
-                <h6 class="f-600">Your Organization</h6>
-                <div class="my-4">
-                    <div class="d-flex mb-3">
-                        <div class="d-flex align-items-center flex-grow-1">
-                            <div
-                                class="me-3 h-38 w-38 rounded-circle overflow-hidden d-flex flex-center flex-shrink-0 bg-dark text-xs text-white f-400 justify-content-center align-items-center">
-                                UE
-                            </div>
-                            <div class="">
-                                <a href="#" class="f-500 text-dark">Utlabore Etdolore</a>
-                                <div class="text-muted text-xs">Android Developer</div>
-                            </div>
-                        </div>
-                        <span class="ms-auto badge bg-light f-600 align-self-start">Owner</span>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <div class="d-flex align-items-center flex-grow-1">
-                            <div
-                                class="me-3 h-38 w-38 rounded-circle overflow-hidden d-flex flex-center flex-shrink-0 bg-danger text-xs text-white f-400 justify-content-center align-items-center">
-                                ti
-                            </div>
-                            <div class="">
-                                <a href="#" class="f-500 text-dark">Tempor Incididunt</a>
-                                <div class="text-muted text-xs">Android Developer</div>
-                            </div>
-                        </div>
-                        <span class="ms-auto badge bg-light f-600 align-self-start">Owner</span>
-                    </div>
-                </div>
-            </div>
+        <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 p-4">
+            <button type="button" class="btn btn-light"> cancel</button>
+            <button type="button" class="btn btn-secondary">Apply</button>
         </div>
     </div>
+    <!-- offcanvas Logic Start-->
     <!-- ============================================================== -->
     <!-- Js And Script  here -->
     <!-- ============================================================== -->

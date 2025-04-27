@@ -2271,11 +2271,11 @@ stroke-width: 2.5;
 }
 
 .f-400 {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .f-500 {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 .f-600 {
