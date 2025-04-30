@@ -1786,7 +1786,7 @@ svg {
 .form-check-input:checked,
 .btn-primary.disabled,
 .btn-primary:disabled,
-.btn-outline-primary.dropdown-toggle.show {
+.btn-outline-primary.dropdown-toggle.show,.btn-check:checked+.btn-primary {
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
 }
@@ -2565,17 +2565,26 @@ stroke-width: 2.5;
     z-index: 1;
 }
 
-.card-radio .card {
-    transition: 200ms linear
+label .card {
+    transition: 200ms linear;
+    border:solid 1px var(--bs-border-color)
 }
 
 .card-radio:checked+.card {
-    border: 1px solid var(--bs-primary);
+    border-color: var(--bs-primary);
     transition: 200ms linear
 }
 
 .card-radio:checked+.card .card-body {
     color: var(--bs-primary);
+}
+label .card .card-body .icon{
+    opacity: .25;
+    fill: var(--bs-primary);
+    color: var(--bs-white);
+}
+.card-radio:checked+.card .card-body .icon{
+opacity: 1;
 }
 .inputRadio {
     background-color: var(--bs-white);

@@ -66,10 +66,11 @@
                     <div class="d-flex align-items-center">
                         <button class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
                             aria-controls="offcanvasRight">Settings <i data-lucide="chevron-right"></i></button>
-                        <button class="btn btn-link">Theme <i data-lucide="chevron-right"></i></button>
+                        <button class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTheme"
+                        aria-controls="offcanvasRight">Theme <i data-lucide="chevron-right"></i></button>
                         <button class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLogic"
                             aria-controls="offcanvasRight">Logic <i data-lucide="chevron-right"></i></button>
-                        <button class="btn btn-link">Translate <i data-lucide="chevron-right"></i></button>
+                        <a class="btn btn-link" href="translation-overview.php">Translate <i data-lucide="chevron-right"></i></a>
                     </div>
                     <div class="ms-sm-auto">
                         <div class="dropdown d-inline-block">
@@ -92,16 +93,89 @@
                         <button class="btn btn-link"> <i data-lucide="eye"></i></button>
                     </div>
                 </div>
-                <div class="tab-content p-4 bg-white rounded-lg  mt-3">
+                <div class="bg-white rounded-lg d-flex align-items-center p-4 mt-3">
+                    <div>
+                        <h5>Welcome!</h5>
+                        <p class="mb-0 text-muted">Eratsed diam sadipscing elitr tempor invidunt utlabore et dolore
+                            magnasadipscing elitr temptempor invidunt utlabore et dolore magnasadipscing (Edit message)
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center ms-auto">
+                        <a href="javascript:void(0);" class="btn btn-link p-1">
+                            <i data-lucide="pencil-line"></i></a>
+                        <a href="javascript:void(0);" class="btn  p-1">
+                            <i data-lucide="trash-2" class="text-danger fill-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-content mt-3 position-relative">
                     <div class="tab-pane active" id="builder" role="tabpanel">
-                        ccc
+                        <div class="card p-4">
+                         <div class="d-flex align-items-center pb-4">
+                            <div class="d-flex align-items-center gap-1">
+                                <i data-lucide="layout-grid" class="text-muted w-20 h-20"></i>
+                                <sapn class="f-600">Q1</sapn>
+                                <div class="ms-1 text-muted">Rank Order</div>
+                            </div>
+                            <div class="d-flex align-items-center ms-auto">
+                                <a href="javascript:void(0);" class="btn btn-link p-1">
+                                    <i data-lucide="notepad-text"></i>
+                                </a>
+                                <a href="javascript:void(0);" class="btn btn-link p-1">
+                                    <i data-lucide="pencil-line"></i>
+                                </a>
+                                <a href="javascript:void(0);" class="btn btn-link p-1">
+                                    <i data-lucide="trash-2" class="text-danger fill-white"></i>
+                                </a>
 
+                            </div>
+                            </div>
+                          <div class="card-body d-flex flex-column gap-3 border border-primary rounded-lg">
+                            <input type="text" class="form-control rounded-pill" plaseholder="" value="Eratsed diam sadipscing elitr tempor invidunt utlabore et dolore magnasadipscing elitr tempor?">
+                            <div class="d-flex align-items-center gap-2 p-1">
+                                <i data-lucide="layout-grid" class="text-muted"></i>
+                                <sapn class="f-600">1</sapn>
+                                <div class="ms-1">Rank Order</div>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 p-1">
+                                <i data-lucide="layout-grid" class="text-muted"></i>
+                                <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                <label class="form-check-label ms-2" for="formCheck1">
+                                                Rank Order
+                                                </label>
+                                            </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 border rounded-lg p-1">
+                                <i data-lucide="layout-grid" class="text-muted"></i>
+                                <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                <label class="form-check-label" for="formCheck1">
+                                                </label>
+                                            </div>
+                                <input type="text" class="form-control border-0 px-0" value="question name">
+                                <div class="ms-auto d-flex">
+                                <i data-lucide="circle-check" class=""></i>
+                                <i data-lucide="circle-x" class=""></i>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-outline-primary d-flex align-items-center">
+                                    <i data-lucide="circle-plus" class=""></i>
+                                <div class="w-100">Add Page</div>
+                                </button>
+                            </div>
+</div>
+                        </div>
+                        <!-- page breaker button -->
+<div class="d-flex align-items-center"><button class="btn btn-primary p-1 d-flex rounded-circle"><i data-lucide="circle-plus" class="w-12 h-12"></i></button><hr class="w-100"></div>
                     </div>
                     <div class="tab-pane" id="integration" role="tabpanel">Integration</div>
                     <div class="tab-pane" id="distribution" role="tabpanel">Distribution</div>
                     <div class="tab-pane" id="analysis" role="tabpanel">Analysis</div>
                     <div class="tab-pane" id="result" role="tabpanel">Result</div>
                     <div class="tab-pane" id="report" role="tabpanel">Report</div>
+                    <div class="position-fixed bottom-0 mb-4 ms-1 z-1"><button class="btn btn-secondary rounded-circle p-2"><i data-lucide="plus" class="w-24 h-24"></i></button></div>
                 </div>
                 <div class="row">
                     <div class="col-12">
@@ -569,16 +643,16 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body px-4">
-            <div class="accordion" id="accordionFlushExample">
+            <div class="accordion" id="accordionLogic">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#Choice" aria-expanded="false" aria-controls="Choice">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#Choice" aria-expanded="true" aria-controls="Choice">
                             Choice Option
                         </button>
                     </h2>
-                    <div id="Choice" class="accordion-collapse collapse" aria-labelledby="Choice-headingOne"
-                        data-bs-parent="#accordionFlushExample">
+                    <div id="Choice" class="accordion-collapse collapse show" aria-labelledby="Choice-headingOne"
+                        data-bs-parent="#accordionLogic">
                         <div class="accordion-body">
                             <div class="mb-3">
                                 <label class="form-label" for="formrow-firstname-input">Choice</label>
@@ -605,7 +679,8 @@
                                         <label class="mb-0">01</label>
                                     </div>
                                     <div class="w-100">
-                                        <input class="form-control" type="text" plaseholder="" value="Extremely Satisfied">
+                                        <input class="form-control" type="text" plaseholder=""
+                                            value="Extremely Satisfied">
                                     </div>
                                     <div class="d-flex align-items-center ms-auto">
                                         <a href="javascript:void(0);" class="btn btn-link p-1"><i
@@ -628,10 +703,11 @@
                                 </div>
                                 <div class="mb-3">
                                     <div class="d-flex align-items-center ">
-                                        <div class="form-label f-500" for="formrow-firstname-input">Make the Option Visible if
+                                        <div class="form-label f-500" for="formrow-firstname-input">Make the Option
+                                            Visible if
                                         </div>
-                                        <button  class="btn btn-link p-1 ms-auto" data-bs-toggle="modal" data-bs-target="#editModal"><i
-                                                data-lucide="pencil-line"></i></button>
+                                        <button class="btn btn-link p-1 ms-auto" data-bs-toggle="modal"
+                                            data-bs-target="#editModal"><i data-lucide="pencil-line"></i></button>
                                     </div>
                                     <textarea class="form-control" rows="4" placeholder="Enter About your description"
                                         value="About your description"></textarea>
@@ -644,7 +720,8 @@
                                         <label class="mb-0">02</label>
                                     </div>
                                     <div class="w-100">
-                                        <input class="form-control" type="text" plaseholder="" value="Extremely Satisfied">
+                                        <input class="form-control" type="text" plaseholder=""
+                                            value="Extremely Satisfied">
                                     </div>
                                     <div class="d-flex align-items-center ms-auto">
                                         <a href="javascript:void(0);" class="btn btn-link p-1"><i
@@ -654,144 +731,430 @@
                                         </a>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label f-500" for="formrow-firstname-input">Copy choice from the
+                                    following question
+                                </label>
+                                <div class="col">
+                                    <select class="form-select">
+                                        <option>Select a question</option>
+                                        <option>Large select</option>
+                                        <option>Small select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label f-500" for="formrow-firstname-input">Choice Order
+                                </label>
+                                <div class="col">
+                                    <select class="form-select">
+                                        <option>None</option>
+                                        <option>Large select</option>
+                                        <option>Small select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="formRadios" id="formRadios1"
+                                    checked="">
+                                <label class="form-check-label" for="formRadios1">
+                                    Wrap choice <i data-lucide="info" class="w-12 h-12"></i>
+                                </label>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                        <label class="form-label f-500" for="formrow-firstname-input">Copy choice from the following question
-</label>
-                        <div class="col">
-                                        <select class="form-select">
-                                            <option>Select a question</option>
-                                            <option>Large select</option>
-                                            <option>Small select</option>
-                                        </select>
-                                    </div>
-</div>
-                        <div class="mb-3">
-                        <label class="form-label f-500" for="formrow-firstname-input">Choice Order
-</label>
-                        <div class="col">
-                                        <select class="form-select">
-                                            <option>None</option>
-                                            <option>Large select</option>
-                                            <option>Small select</option>
-                                        </select>
-                                    </div>
-</div>
-<div class="form-check mb-2">
-                                                <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked="">
-                                                <label class="form-check-label" for="formRadios1">
-                                                Wrap choice <i data-lucide="info" class="w-12 h-12"></i>
-                                                </label>
-                                            </div>
                     </div>
                 </div>
             </div>
-</div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#Conditions" aria-expanded="false" aria-controls="Conditions">
+                        Conditions
+                    </button>
+                </h2>
+                <div id="Conditions" class="accordion-collapse collapse" aria-labelledby="Conditions-headingOne"
+                    data-bs-parent="#accordionLogic">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center ">
+                                <div class="form-label f-500 d-flex align-items-center gap-1"
+                                    for="formrow-firstname-input">Make the Option
+                                    Visible if <i data-lucide="info" class="w-12 h-12"></i>
+                                </div>
+                                <button class="btn btn-link p-1 ms-auto" data-bs-toggle="modal"
+                                    data-bs-target="#editModal"><i data-lucide="pencil-line"></i></button>
+                            </div>
+                            <textarea class="form-control" rows="3" placeholder="Enter About your description"
+                                value="About your description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#Data" aria-expanded="false" aria-controls="Data">
+                        Data
+                    </button>
+                </h2>
+                <div id="Data" class="accordion-collapse collapse" aria-labelledby="Data-headingOne"
+                    data-bs-parent="#accordionLogic">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center ">
+                                <div class="form-label f-500 d-flex align-items-center gap-1"
+                                    for="formrow-firstname-input">Join Identifire <i data-lucide="info"
+                                        class="w-12 h-12"></i>
+                                </div>
+                            </div>
+                            <input class="form-control" type="text" placeholder="Enter About your description"
+                                value="About your description">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Change Default Answer"
+                                aria-label="Change Default Answer" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Clear</button>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked="">
+                            <label class="form-check-label d-flex align-items-center gap-1" for="formRadios1">
+                                Use display values in dynamic texts <i data-lucide="info" class="w-12 h-12"></i>
+                            </label>
+                        </div>
+                        <div class="">
+                            <div class="d-flex align-items-center ">
+                                <div class="form-label f-500 d-flex align-items-center gap-1"
+                                    for="formrow-firstname-input">Clear hidden question values <i data-lucide="info"
+                                        class="w-12 h-12"></i>
+                                </div>
+                            </div>
+                            <select class="form-select">
+                                <option>Inherit</option>
+                                <option>Large select</option>
+                                <option>Small select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#VAlidation" aria-expanded="false" aria-controls="VAlidation">
+                        Validation
+                    </button>
+                </h2>
+                <div id="VAlidation" class="accordion-collapse collapse" aria-labelledby="VAlidation-headingOne"
+                    data-bs-parent="#accordionLogic">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center ">
+                                <div class="form-label f-600 d-flex align-items-center gap-1"
+                                    for="formrow-firstname-input">Validation rules <i data-lucide="info"
+                                        class="w-12 h-12"></i>
+                                </div>
+                                <button class="btn btn-link p-1 ms-auto" data-bs-toggle="modal"
+                                    data-bs-target="#LogicModal"><i data-lucide="circle-plus"
+                                        class="w-20 h-20"></i></button>
+                            </div>
+                            <div class="border rounded mb-3">
+                                <div class="input-group">
+                                    <select class="form-select border-0">
+                                        <option>Inherit</option>
+                                        <option>Large select</option>
+                                        <option>Small select</option>
+                                    </select>
+                                    <div class="d-flex align-items-center ">
+                                        <a href="javascript:void(0);" class="btn btn-link p-1">
+                                            <i data-lucide="pencil-line" class=""> </i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="btn  p-1">
+                                            <i data-lucide="trash-2" class="text-danger fill-white"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- the element collapse time when open \/ -->
+                                <div class="p-2 border-top">
+                                    <input type="text" class="form-control" placeholder="Maximum Value">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-label f-500" for="formrow-firstname-input">Error message for required
+                                    question
+                                </div>
+                                <input type="text" class="form-control" placeholder="Error">
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-label f-500 " for="formrow-firstname-input">Validation expression
+                                </div>
+                                <input type="text" class="form-control" placeholder="validation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 p-4">
             <button type="button" class="btn btn-light"> cancel</button>
             <button type="button" class="btn btn-secondary">Apply</button>
         </div>
-        
     </div>
-    <!-- Modal -->
-<div class="modal fade " id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header border-0">
-        <h5 class="modal-title" id="staticBackdropLabel">Make the Option Visible If</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <form class="row g-3 needs-validation" novalidate>
-  <div class="col-md-6">
-    <label for="validationCustom01" class="form-label">If</label>
-    <select class="form-select" id="validationCustom01" required>
-      <option selected disabled value="">Question 1 .Raw 1</option>
-      <option>...</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-md-6 align-self-end">
-    <select class="form-select" id="validationCustom02" required>
-      <option selected disabled value="">Equal</option>
-      <option>...</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-md-12">
-    <label for="validationCustom03" class="form-label">Row 1</label>
-    <select class="form-select" id="validationCustom03" required>
-      <option selected disabled value="">Column</option>
-      <option>...</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-
- 
-  <div class="col-md-2">
-    <select class="form-select" id="validationCustom04" required>
-      <option selected disabled value="">and</option>
-      <option>or</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-md-4">
-    <select class="form-select" id="validationCustom05" required>
-      <option selected disabled value="">Select</option>
-      <option>...</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-md-4">
-    <select class="form-select" id="validationCustom06" required>
-      <option selected disabled value="">Equal</option>
-      <option>...</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-md-2 align-self-end">
-    <button class="btn btn-outline-danger">
-        <i data-lucide="trash-2"></i>
-    </button>
-  </div>
-  <div class="col-md-12">
-    <label for="validationCustom07" class="form-label">Row 2</label>
-    <select class="form-select" id="validationCustom07" required>
-      <option selected disabled value="">Select</option>
-      <option>...</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-12">
-  <button class="btn  btn-outline-primary d-flex align-items-center">
-    <i data-lucide="circle-plus" class=""></i>
-     <div class="w-100">Add New</div>
-  </button>
-  </div>
-</form>
-      </div>
-      <div class="modal-footer border-0">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Apply</button>
-      </div>
-    </div>
-  </div>
+        <!-- offcanvas Theme Start-->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTheme" aria-labelledby="offcanvasSurveyLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasSurveyLabel">Theme Customizer </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-4">
+        <h6 class="f-600 mb-3">Theme Layout</h6>
+        <div class="row">
+            <div class="col-sm-6">
+        <label>
+                            <input type="radio" name="themeOne" class="card-radio d-none">
+                                <div class="card">
+                                <div class="card-body p-2">
+                                    <img class="img-fluid rounded mb-2" src="https://images.unsplash.com/photo-1709238810760-bae86f4c2204?q=80&amp;w=2071&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                    <div class="text-sm f-400 d-flex align-items-center gap-1"><i data-lucide="circle-check" class="icon w-20 h-20"></i><span>Theme one </span></div>
+                                </div>
+                                </div>
+                            </label>
 </div>
+            <div class="col-sm-6">
+        <label>
+                            <input type="radio" name="themeTwo" class="card-radio d-none">
+                                <div class="card">
+                                <div class="card-body p-2">
+                                    <img class="img-fluid rounded mb-2" src="https://images.unsplash.com/photo-1709238810760-bae86f4c2204?q=80&amp;w=2071&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                    <div class="text-sm f-400 d-flex align-items-center gap-1"><i data-lucide="circle-check" class="icon w-20 h-20"></i><span>Theme two </span></div>
+                                </div>
+                                </div>
+                            </label>
+</div>
+        </div>    
+        <h6 class="f-600 mb-3">Color Scheme</h6>
+        <div class="row">
+                            <div class="col-auto">
+                            <div class="inputRadio">
+                                <input id="option1" name="CustomLogo" type="checkbox">
+                                <label for="option1" class="">Color From Logo</label>
+                            </div>
+                            </div>
+                            <div class="col-auto">
+                            <div class="inputRadio">
+                                <input id="option2" name="customcolor" type="checkbox" checked>
+                                <label for="option2" class="">Custom Color</label>
+                            </div>
+                            </div>
+                            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 p-4">
+            <button type="button" class="btn btn-light"> cancel</button>
+            <button type="button" class="btn btn-secondary">Apply</button>
+        </div>
+
+    </div>
+    <!--choice option modal - logic settings -->
+    <div class="modal fade " id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="staticBackdropLabel">Make the Option Visible If</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">If</label>
+                            <select class="form-select" id="validationCustom01" required>
+                                <option selected disabled value="">Question 1 .Raw 1</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6 align-self-end">
+                            <select class="form-select" id="validationCustom02" required>
+                                <option selected disabled value="">Equal</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom03" class="form-label">Row 1</label>
+                            <select class="form-select" id="validationCustom03" required>
+                                <option selected disabled value="">Column</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">and</option>
+                                <option>or</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="validationCustom05" required>
+                                <option selected disabled value="">Select</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="validationCustom06" required>
+                                <option selected disabled value="">Equal</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-2 align-self-end">
+                            <button class="btn btn-outline-danger">
+                                <i data-lucide="trash-2"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom07" class="form-label">Row 2</label>
+                            <select class="form-select" id="validationCustom07" required>
+                                <option selected disabled value="">Select</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn  btn-outline-primary d-flex align-items-center">
+                                <i data-lucide="circle-plus" class=""></i>
+                                <div class="w-100">Add New</div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Logic display modal - Display logic settings -->
+    <div class="modal fade " id="LogicModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div>
+                        <h5 class="modal-title" id="staticBackdropLabel">Display Logic</h5>
+                        <div>(How satisfied are you with the following experience with our company? Product…)</div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">If</label>
+                            <select class="form-select" id="validationCustom01" required>
+                                <option selected disabled value="">Question 1 .Raw 1</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6 align-self-end">
+                            <select class="form-select" id="validationCustom02" required>
+                                <option selected disabled value="">Equal</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom03" class="form-label">Row 1</label>
+                            <select class="form-select" id="validationCustom03" required>
+                                <option selected disabled value="">Column</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">and</option>
+                                <option>or</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="validationCustom05" required>
+                                <option selected disabled value="">Select</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="validationCustom06" required>
+                                <option selected disabled value="">Equal</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-2 align-self-end">
+                            <button class="btn btn-outline-danger">
+                                <i data-lucide="trash-2"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom07" class="form-label">Row 2</label>
+                            <select class="form-select" id="validationCustom07" required>
+                                <option selected disabled value="">Select</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn  btn-outline-primary d-flex align-items-center">
+                                <i data-lucide="circle-plus" class=""></i>
+                                <div class="w-100">Add New</div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ============================================================== -->
     <!-- Js And Script  here -->
     <!-- ============================================================== -->

@@ -87,9 +87,90 @@
                                     </div>
                                 </div>
 
-                            
+                                <div class="table-responsive">
+                                            <table class="table align-middle table-nowrap table-check">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th class="align-middle opacity-50">
+                                                        <select class="form-select border-0 f-600" aria-label="Language">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                        </select>
+                                                        </th>
+                                                        <th class="align-middle opacity-50">
+                                                        <select class="form-select border-0 f-600" aria-label="Code">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                        </select>
+                                                        </th>
+                                                        <th class="align-middle opacity-50">Visible</th>
+                                                        <th class="align-middle opacity-50">
+                                                        <select class="form-select border-0 f-600" aria-label="Translation Progress">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                        </select>
+                                                        </th>
+                                                        <th class="align-middle opacity-50">Quess</th>
+                                                        <th class="align-middle opacity-50">Other</th>
+                                                        <th class="align-middle opacity-50">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            English
+                                                        </td>
+                                                        <td>
+                                                           EN
+                                                        </td>
+                                                        <td>
+                                                           Yes
+                                                        </td>
+                                                        <td>
+                                                        <div class="progress">
+                                                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                                        </div>
+                                                        </td>
+                                                        <td>
+                                                            0 of 5
+                                                        </td>
+                                                        <td>
+                                                            0 of 2
+                                                        </td>
+                                                        <td>
+                                                        <div class="dropdown">
+                                                <button type="button"
+                                                    class="btn btn-link"
+                                                    id="action-dropdown" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <i data-lucide="ellipsis-vertical" class="h-20"></i>
+                                                </button>
+                                                <div class="dropdown-menu  p-0"
+                                                    aria-labelledby="page-header-notifications-dropdown">
+                                                    <div data-simplebar style="max-height: 250px;">
+                                                    <a href="translation.php" class="dropdown-item">View Incomplete Translations</a>
+                                                        <a href="" class="dropdown-item">Edit Translations</a>
+                                                        <a href="" class="dropdown-item">Download Language File</a>
+                                                        <a href="" class="dropdown-item">Upload Language File</a>
+                                                        <a href="" class="dropdown-item">Hide from Respondents</a>
+                                                        <a href="" class="dropdown-item">Delete Translations</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
                             </div>
+
                         </div>
                     </div>
                 </div>
