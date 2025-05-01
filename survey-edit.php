@@ -113,7 +113,7 @@
                         <div class="card p-4">
                          <div class="d-flex align-items-center pb-4">
                             <div class="d-flex align-items-center gap-1">
-                                <i data-lucide="layout-grid" class="text-muted w-20 h-20"></i>
+                                <i data-lucide="grip-vertical" class="text-muted w-20 h-20"></i>
                                 <sapn class="f-600">Q1</sapn>
                                 <div class="ms-1 text-muted">Rank Order</div>
                             </div>
@@ -133,12 +133,12 @@
                           <div class="card-body d-flex flex-column gap-3 border border-primary rounded-lg">
                             <input type="text" class="form-control rounded-pill" plaseholder="" value="Eratsed diam sadipscing elitr tempor invidunt utlabore et dolore magnasadipscing elitr tempor?">
                             <div class="d-flex align-items-center gap-2 p-1">
-                                <i data-lucide="layout-grid" class="text-muted"></i>
+                                <i data-lucide="grip-vertical" class="text-muted"></i>
                                 <sapn class="f-600">1</sapn>
                                 <div class="ms-1">Rank Order</div>
                             </div>
                             <div class="d-flex align-items-center gap-2 p-1">
-                                <i data-lucide="layout-grid" class="text-muted"></i>
+                                <i data-lucide="grip-vertical" class="text-muted"></i>
                                 <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="formCheck1">
                                                 <label class="form-check-label ms-2" for="formCheck1">
@@ -147,7 +147,7 @@
                                             </div>
                             </div>
                             <div class="d-flex align-items-center gap-2 border rounded-lg p-1">
-                                <i data-lucide="layout-grid" class="text-muted"></i>
+                                <i data-lucide="grip-vertical" class="text-muted"></i>
                                 <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="formCheck1">
                                                 <label class="form-check-label" for="formCheck1">
@@ -175,7 +175,108 @@
                     <div class="tab-pane" id="analysis" role="tabpanel">Analysis</div>
                     <div class="tab-pane" id="result" role="tabpanel">Result</div>
                     <div class="tab-pane" id="report" role="tabpanel">Report</div>
-                    <div class="position-fixed bottom-0 mb-4 ms-1 z-1"><button class="btn btn-secondary rounded-circle p-2"><i data-lucide="plus" class="w-24 h-24"></i></button></div>
+                    <div class="position-fixed bottom-0 mb-4 ms-1 z-1">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary rounded-circle p-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-lucide="plus" class="w-24 h-24"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 py-3">
+                        <h6 class="dropdown-header mb-2">Choose a Question</h6>
+                        <div data-simplebar style="max-height: 250px;">
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="circle-dot"></i>
+                                <span>Single Choice</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="square-check"></i>
+                                <span>Multiple Choice</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="text"></i>
+                                <span>Dropdown One Choice</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="list"></i>
+                                <span>Dropdown Multiple Choice</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="star"></i>
+                                <span>Start Rating</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="bubbles"></i>
+                                <span>Nps</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="image"></i>
+                                <span>Image Selection</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="list-filter"></i>
+                                <span>Rank Order</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="server"></i>
+                                <span>Boolen (Yes/No)</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="gallery-thumbnails"></i>
+                                <span>Slider</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="computer"></i>
+                                <span>Singleline Input</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="component"></i>
+                                <span>Matrix</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="square-menu"></i>
+                                <span>Form Field</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="calculator"></i>
+                                <span>Continuous Sum</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="contact"></i>
+                                <span>Contact Information</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="mail"></i>
+                                <span>Email</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="phone-call"></i>
+                                <span>Phone Number</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="signature"></i>
+                                <span>Signature</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="file-up"></i>
+                                <span>File Upload</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="square-square"></i>
+                                <span>Higlight</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="palette"></i>
+                                <span>Color</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center gap-1">
+                                <i class="" data-lucide="rotate-cw"></i>
+                                <span>Captcha</span>
+                            </a>
+                         </div>
+                        </div>
+                     </div>
+                    </div>
+
+
                 </div>
                 <div class="row">
                     <div class="col-12">
