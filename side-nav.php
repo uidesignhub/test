@@ -1,14 +1,5 @@
  <aside class="side-nav bg-primary">
-            <!-- LOGO -->
-            <a href="index.html" class="logo d-none d-sm-block bg-white">
-                <span class="logo-sm">
-                    <img src="assets/images/logo-sm.svg" alt="grainchaff" width="28">
 
-                </span>
-                <span class="logo-lg">
-                    <img src="assets/images/logo.svg" alt="grainchaff" width="144">
-                </span>
-            </a>
             <div data-simplebar class="sidebar-menu-scroll">
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">

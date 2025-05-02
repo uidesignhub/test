@@ -1,17 +1,27 @@
 <header id="top-nav" class="bg-white">
     <div class="container-fluid d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center gap-3">
-            <button type="button" class="btn btn-sm bg-white w-48 h-48 rounded-circle shadow nav-btn">
-                <i data-lucide="menu" class="h-20"></i>
-            </button>
-            <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-                <a href="index.html" class="d-sm-none">
+        <div class="d-flex align-items-center gap-2">
+ 
+            <!-- <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0"> -->
+                <!-- <a href="index.html" class="d-sm-none">
                     <span class="logo-sm">
                         <img src="assets/images/logo-sm.svg" alt="Grainchaff" width="28">
 
                     </span>
-                </a>
-            </div>
+                </a> -->
+                            <!-- LOGO -->
+            <a href="index.html" class="logo bg-white">
+                <span class="logo-sm">
+                    <img src="assets/images/logo-sm.svg" alt="grainchaff" width="28">
+
+                </span>
+                <span class="logo-lg">
+                    <img src="assets/images/logo.svg" alt="grainchaff" width="144">
+                </span>
+            </a>
+            <button type="button" class="btn btn-sm bg-white w-48 h-48 rounded-circle shadow nav-btn">
+                <i data-lucide="menu" class="h-20"></i>
+            </button>
         </div>
         <div class="d-flex align-items-center">
             <div class="dropdown d-inline-block d-block d-lg-none">

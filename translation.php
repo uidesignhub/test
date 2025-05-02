@@ -23,7 +23,7 @@
                     <div class="col-sm-auto">
                         <h4 class="mb-0 f-600">Translation</h4>
                     </div>
-                    <div class="ms-md-auto d-sm-flex align-items-center gap-2 mt-2 mt-sm-0 col-sm-6">
+                    <div class="ms-md-auto d-sm-flex align-items-center gap-2 mt-2 mt-sm-0 col-lg-6 col-sm-8">
                         <select class="form-select mb-3 mb-sm-0" id="floatingSelect"
                             aria-label="Floating label select example">
                             <option selected>Question</option>

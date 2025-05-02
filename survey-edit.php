@@ -19,41 +19,41 @@
         <div class="main-content">
             <div class="container-fluid">
                 <!-- start page header -->
-                <div class="page-header d-md-flex align-items-center">
+                <div class="page-header d-lg-flex align-items-center">
                     <div class="d-flex justify-content-between align-items-center">
                         <h4 class="mb-0 f-600">Edit Survey 01</h4>
                         <button class="btn btn-link">
                             <i data-lucide="pencil-line"></i>
                         </button>
                     </div>
-                    <div class="ms-md-auto d-flex align-items-center gap-2 mt-2 mt-sm-0">
+                    <div class="ms-md-auto d-flex align-items-center gap-2 mt-2 mt-lg-0">
                         <ul class="nav  nav-pills gap-2" role="tablist">
-                            <li class="nav-item">
+                            <li class="nav-item flex-fill">
                                 <a class="nav-link active" data-bs-toggle="tab" href="#builder" role="tab">
                                     <div class="f-500">Builder</div>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item flex-fill">
                                 <a class="nav-link" data-bs-toggle="tab" href="#integration" role="tab">
                                     <div class="f-500">Integration</div>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item flex-fill">
                                 <a class="nav-link" data-bs-toggle="tab" href="#distribution" role="tab">
                                     <div class="f-500">Distribution</div>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item flex-fill">
                                 <a class="nav-link" data-bs-toggle="tab" href="#analysis" role="tab">
                                     <div class="f-500">Data&Analycis</div>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item flex-fill">
                                 <a class="nav-link" data-bs-toggle="tab" href="#result" role="tab">
                                     <div class="f-500">Result</div>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item flex-fill">
                                 <a class="nav-link" data-bs-toggle="tab" href="#report" role="tab">
                                     <div class="f-500">Report</div>
                                 </a>
@@ -187,86 +187,107 @@
                                 <i class="" data-lucide="circle-dot"></i>
                                 <span>Single Choice</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="square-check"></i>
                                 <span>Multiple Choice</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="text"></i>
                                 <span>Dropdown One Choice</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="list"></i>
                                 <span>Dropdown Multiple Choice</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="star"></i>
                                 <span>Start Rating</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="bubbles"></i>
                                 <span>Nps</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="image"></i>
                                 <span>Image Selection</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="list-filter"></i>
                                 <span>Rank Order</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="server"></i>
                                 <span>Boolen (Yes/No)</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="gallery-thumbnails"></i>
                                 <span>Slider</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="computer"></i>
                                 <span>Singleline Input</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="component"></i>
                                 <span>Matrix</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="square-menu"></i>
                                 <span>Form Field</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="calculator"></i>
                                 <span>Continuous Sum</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="contact"></i>
                                 <span>Contact Information</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="mail"></i>
                                 <span>Email</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="phone-call"></i>
                                 <span>Phone Number</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="signature"></i>
                                 <span>Signature</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="file-up"></i>
                                 <span>File Upload</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="square-square"></i>
                                 <span>Higlight</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="palette"></i>
                                 <span>Color</span>
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item d-flex align-items-center gap-1">
                                 <i class="" data-lucide="rotate-cw"></i>
                                 <span>Captcha</span>
