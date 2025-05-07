@@ -63,14 +63,15 @@
 
                 </div>
                 <div class="bg-white d-flex p-4 rounded-lg d-flex">
-                    <div class="d-flex align-items-center">
-                        <button class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
-                            aria-controls="offcanvasRight">Settings <i data-lucide="chevron-right"></i></button>
-                        <button class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTheme"
-                        aria-controls="offcanvasRight">Theme <i data-lucide="chevron-right"></i></button>
-                        <button class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLogic"
-                            aria-controls="offcanvasRight">Logic <i data-lucide="chevron-right"></i></button>
-                        <a class="btn btn-link" href="translation-overview.php">Translate <i data-lucide="chevron-right"></i></a>
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+                            aria-controls="offcanvasRight">Settings <i data-lucide="chevron-right" class="w-auto"></i></button>
+                        <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTheme"
+                            aria-controls="offcanvasRight">Theme <i data-lucide="chevron-right" class="w-auto"></i></button>
+                        <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLogic"
+                            aria-controls="offcanvasRight">Logic <i data-lucide="chevron-right" class="w-auto"></i></button>
+                        <a class="btn btn-light" href="translation-overview.php">Translate <i
+                                data-lucide="chevron-right" class="w-auto"></i></a>
                     </div>
                     <div class="ms-sm-auto">
                         <div class="dropdown d-inline-block">
@@ -100,75 +101,93 @@
                             magnasadipscing elitr temptempor invidunt utlabore et dolore magnasadipscing (Edit message)
                         </p>
                     </div>
-                    <div class="d-flex align-items-center ms-auto">
-                        <a href="javascript:void(0);" class="btn btn-link p-1">
-                            <i data-lucide="pencil-line"></i></a>
-                        <a href="javascript:void(0);" class="btn  p-1">
+                    <div class="dropdown d-inline-block ms-auto">
+                        <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-lucide="ellipsis-vertical"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">
+                            <i data-lucide="pencil-line"></i> Edit</a>
+                        <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">
                             <i data-lucide="trash-2" class="text-danger fill-white"></i>
+                            Delete
                         </a>
+</div>
                     </div>
                 </div>
                 <div class="tab-content mt-3 position-relative">
                     <div class="tab-pane active" id="builder" role="tabpanel">
+                         <!-- page close  button -->
+                         <div class="d-flex align-items-center mb-3"><button
+                                class="btn btn-sm px-2 btn-outline-light">Page</button>
+                            <hr class="w-100">
+                            <i data-lucide="circle-x"
+                                    class="w-16 h-16"></i>
+                        </div>
                         <div class="card p-4">
-                         <div class="d-flex align-items-center pb-4">
-                            <div class="d-flex align-items-center gap-1">
-                                <i data-lucide="grip-vertical" class="text-muted w-20 h-20"></i>
-                                <sapn class="f-600">Q1</sapn>
-                                <div class="ms-1 text-muted">Rank Order</div>
-                            </div>
-                            <div class="d-flex align-items-center ms-auto">
-                                <a href="javascript:void(0);" class="btn btn-link p-1">
-                                    <i data-lucide="notepad-text"></i>
-                                </a>
-                                <a href="javascript:void(0);" class="btn btn-link p-1">
-                                    <i data-lucide="pencil-line"></i>
-                                </a>
-                                <a href="javascript:void(0);" class="btn btn-link p-1">
-                                    <i data-lucide="trash-2" class="text-danger fill-white"></i>
-                                </a>
+                            <div class="d-flex align-items-center pb-4">
+                                <div class="d-flex align-items-center gap-1">
+                                    <i data-lucide="grip-vertical" class="text-muted w-20 h-20"></i>
+                                    <sapn class="f-600">Q1</sapn>
+                                    <div class="ms-1 text-muted">Rank Order</div>
+                                </div>
+                                <div class="d-flex align-items-center ms-auto">
+                                    <a href="javascript:void(0);" class="btn btn-link p-1">
+                                        <i data-lucide="notepad-text"></i>
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-link p-1">
+                                        <i data-lucide="pencil-line"></i>
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-link p-1">
+                                        <i data-lucide="trash-2" class="text-danger fill-white"></i>
+                                    </a>
 
-                            </div>
-                            </div>
-                          <div class="card-body d-flex flex-column gap-3 border border-primary rounded-lg">
-                            <input type="text" class="form-control rounded-pill" plaseholder="" value="Eratsed diam sadipscing elitr tempor invidunt utlabore et dolore magnasadipscing elitr tempor?">
-                            <div class="d-flex align-items-center gap-2 p-1">
-                                <i data-lucide="grip-vertical" class="text-muted"></i>
-                                <sapn class="f-600">1</sapn>
-                                <div class="ms-1">Rank Order</div>
-                            </div>
-                            <div class="d-flex align-items-center gap-2 p-1">
-                                <i data-lucide="grip-vertical" class="text-muted"></i>
-                                <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="formCheck1">
-                                                <label class="form-check-label ms-2" for="formCheck1">
-                                                Rank Order
-                                                </label>
-                                            </div>
-                            </div>
-                            <div class="d-flex align-items-center gap-2 border rounded-lg p-1">
-                                <i data-lucide="grip-vertical" class="text-muted"></i>
-                                <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="formCheck1">
-                                                <label class="form-check-label" for="formCheck1">
-                                                </label>
-                                            </div>
-                                <input type="text" class="form-control border-0 px-0" value="question name">
-                                <div class="ms-auto d-flex">
-                                <i data-lucide="circle-check" class=""></i>
-                                <i data-lucide="circle-x" class=""></i>
                                 </div>
                             </div>
-                            <div class="">
-                                <button class="btn btn-outline-primary d-flex align-items-center">
-                                    <i data-lucide="circle-plus" class=""></i>
-                                <div class="w-100">Add Page</div>
-                                </button>
+                            <div class="card-body d-flex flex-column gap-3 border border-primary rounded-lg">
+                                <input type="text" class="form-control rounded-pill" plaseholder=""
+                                    value="Eratsed diam sadipscing elitr tempor invidunt utlabore et dolore magnasadipscing elitr tempor?">
+                                <div class="d-flex align-items-center gap-2 p-1">
+                                    <i data-lucide="grip-vertical" class="text-muted"></i>
+                                    <sapn class="f-600">1</sapn>
+                                    <div class="ms-1">Rank Order</div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 p-1">
+                                    <i data-lucide="grip-vertical" class="text-muted"></i>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                        <label class="form-check-label ms-2" for="formCheck1">
+                                            Rank Order
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 border rounded-lg p-1">
+                                    <i data-lucide="grip-vertical" class="text-muted"></i>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                        <label class="form-check-label" for="formCheck1">
+                                        </label>
+                                    </div>
+                                    <input type="text" class="form-control border-0 px-0" value="question name">
+                                    <div class="ms-auto d-flex">
+                                        <i data-lucide="circle-check" class=""></i>
+                                        <i data-lucide="circle-x" class=""></i>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-outline-primary d-flex align-items-center">
+                                        <i data-lucide="circle-plus" class=""></i>
+                                        <div class="w-100">Add Page</div>
+                                    </button>
+                                </div>
                             </div>
-</div>
                         </div>
                         <!-- page breaker button -->
-<div class="d-flex align-items-center"><button class="btn btn-primary p-1 d-flex rounded-circle"><i data-lucide="circle-plus" class="w-12 h-12"></i></button><hr class="w-100"></div>
+                        <div class="d-flex align-items-center"><button
+                                class="btn btn-primary p-1 d-flex rounded-circle"><i data-lucide="circle-plus"
+                                    class="w-12 h-12"></i></button>
+                            <hr class="w-100">
+                        </div>
                     </div>
                     <div class="tab-pane" id="integration" role="tabpanel">Integration</div>
                     <div class="tab-pane" id="distribution" role="tabpanel">Distribution</div>
@@ -176,125 +195,126 @@
                     <div class="tab-pane" id="result" role="tabpanel">Result</div>
                     <div class="tab-pane" id="report" role="tabpanel">Report</div>
                     <div class="position-fixed bottom-0 mb-4 ms-1 z-1">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary rounded-circle p-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i data-lucide="plus" class="w-24 h-24"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 py-3">
-                        <h6 class="dropdown-header mb-2">Choose a Question</h6>
-                        <div data-simplebar style="max-height: 250px;">
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="circle-dot"></i>
-                                <span>Single Choice</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="square-check"></i>
-                                <span>Multiple Choice</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="text"></i>
-                                <span>Dropdown One Choice</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="list"></i>
-                                <span>Dropdown Multiple Choice</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="star"></i>
-                                <span>Start Rating</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="bubbles"></i>
-                                <span>Nps</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="image"></i>
-                                <span>Image Selection</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="list-filter"></i>
-                                <span>Rank Order</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="server"></i>
-                                <span>Boolen (Yes/No)</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="gallery-thumbnails"></i>
-                                <span>Slider</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="computer"></i>
-                                <span>Singleline Input</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="component"></i>
-                                <span>Matrix</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="square-menu"></i>
-                                <span>Form Field</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="calculator"></i>
-                                <span>Continuous Sum</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="contact"></i>
-                                <span>Contact Information</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="mail"></i>
-                                <span>Email</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="phone-call"></i>
-                                <span>Phone Number</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="signature"></i>
-                                <span>Signature</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="file-up"></i>
-                                <span>File Upload</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="square-square"></i>
-                                <span>Higlight</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="palette"></i>
-                                <span>Color</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center gap-1">
-                                <i class="" data-lucide="rotate-cw"></i>
-                                <span>Captcha</span>
-                            </a>
-                         </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary rounded-circle p-2" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i data-lucide="plus" class="w-24 h-24"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 py-3">
+                                <h6 class="dropdown-header mb-2">Choose a Question</h6>
+                                <div data-simplebar style="max-height: 250px;">
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="circle-dot"></i>
+                                        <span>Single Choice</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="square-check"></i>
+                                        <span>Multiple Choice</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="text"></i>
+                                        <span>Dropdown One Choice</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="list"></i>
+                                        <span>Dropdown Multiple Choice</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="star"></i>
+                                        <span>Start Rating</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="bubbles"></i>
+                                        <span>Nps</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="image"></i>
+                                        <span>Image Selection</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="list-filter"></i>
+                                        <span>Rank Order</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="server"></i>
+                                        <span>Boolen (Yes/No)</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="gallery-thumbnails"></i>
+                                        <span>Slider</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="computer"></i>
+                                        <span>Singleline Input</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="component"></i>
+                                        <span>Matrix</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="square-menu"></i>
+                                        <span>Form Field</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="calculator"></i>
+                                        <span>Continuous Sum</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="contact"></i>
+                                        <span>Contact Information</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="mail"></i>
+                                        <span>Email</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="phone-call"></i>
+                                        <span>Phone Number</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="signature"></i>
+                                        <span>Signature</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="file-up"></i>
+                                        <span>File Upload</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="square-square"></i>
+                                        <span>Higlight</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="palette"></i>
+                                        <span>Color</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-flex align-items-center gap-1">
+                                        <i class="" data-lucide="rotate-cw"></i>
+                                        <span>Captcha</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                     </div>
                     </div>
 
 
@@ -1022,53 +1042,104 @@
             <button type="button" class="btn btn-secondary">Apply</button>
         </div>
     </div>
-        <!-- offcanvas Theme Start-->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTheme" aria-labelledby="offcanvasSurveyLabel">
+    <!-- offcanvas Theme Start-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTheme" aria-labelledby="offcanvasSurveyLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasSurveyLabel">Theme Customizer </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body px-4">
-        <h6 class="f-600 mb-3">Theme Layout</h6>
-        <div class="row">
-            <div class="col-sm-6">
-        <label>
-                            <input type="radio" name="themeOne" class="card-radio d-none">
-                                <div class="card">
-                                <div class="card-body p-2">
-                                    <img class="img-fluid rounded mb-2" src="https://images.unsplash.com/photo-1709238810760-bae86f4c2204?q=80&amp;w=2071&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                                    <div class="text-sm f-400 d-flex align-items-center gap-1"><i data-lucide="circle-check" class="icon w-20 h-20"></i><span>Theme one </span></div>
-                                </div>
-                                </div>
-                            </label>
-</div>
-            <div class="col-sm-6">
-        <label>
-                            <input type="radio" name="themeTwo" class="card-radio d-none">
-                                <div class="card">
-                                <div class="card-body p-2">
-                                    <img class="img-fluid rounded mb-2" src="https://images.unsplash.com/photo-1709238810760-bae86f4c2204?q=80&amp;w=2071&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                                    <div class="text-sm f-400 d-flex align-items-center gap-1"><i data-lucide="circle-check" class="icon w-20 h-20"></i><span>Theme two </span></div>
-                                </div>
-                                </div>
-                            </label>
-</div>
-        </div>    
-        <h6 class="f-600 mb-3">Color Scheme</h6>
-        <div class="row">
-                            <div class="col-auto">
-                            <div class="inputRadio">
-                                <input id="option1" name="CustomLogo" type="checkbox">
-                                <label for="option1" class="">Color From Logo</label>
+            <h6 class="f-600 mb-3">Theme Layout</h6>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>
+                        <input type="radio" name="themeOne" class="card-radio d-none">
+                        <div class="card">
+                            <div class="card-body p-2">
+                                <img class="img-fluid rounded mb-2"
+                                    src="https://images.unsplash.com/photo-1709238810760-bae86f4c2204?q=80&amp;w=2071&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                <div class="text-sm f-400 d-flex align-items-center gap-1"><i data-lucide="circle-check"
+                                        class="icon w-20 h-20"></i><span>Theme one </span></div>
                             </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-sm-6">
+                    <label>
+                        <input type="radio" name="themeTwo" class="card-radio d-none">
+                        <div class="card">
+                            <div class="card-body p-2">
+                                <img class="img-fluid rounded mb-2"
+                                    src="https://images.unsplash.com/photo-1709238810760-bae86f4c2204?q=80&amp;w=2071&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                <div class="text-sm f-400 d-flex align-items-center gap-1"><i data-lucide="circle-check"
+                                        class="icon w-20 h-20"></i><span>Theme two </span></div>
                             </div>
-                            <div class="col-auto">
-                            <div class="inputRadio">
-                                <input id="option2" name="customcolor" type="checkbox" checked>
-                                <label for="option2" class="">Custom Color</label>
-                            </div>
-                            </div>
-                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <h6 class="f-600 mb-3">Color Scheme</h6>
+
+            <div class="d-flex flex-column gap-3" role="group" aria-label="First group">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="inputRadio">
+                            <input id="option1" name="CustomLogo" type="checkbox">
+                            <label for="option1" class="">Color From Logo</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="inputRadio">
+                            <input id="option2" name="customcolor" type="checkbox" checked>
+                            <label for="option2" class="">Custom Color</label>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="f-500 text-sm">Suggestion</h6>
+                <div>
+                    <span type="button" class="w-20 h-20 text-center rounded-circle lh-1"
+                        style="background-color: #B70E1A;"><i data-lucide="check"
+                            class="w-14 h-20 text-white opacity-0"></i></span>
+                    <span type="button" class="w-20 h-20 text-center rounded-circle lh-1"
+                        style="background-color: #23AD20;"><i data-lucide="check"
+                            class="w-14 h-20 text-white opacity-1"></i></span>
+                </div>
+                <div class="d-flex justify-content-between  p-3 rounded-md border border-1 bg-white mt-2">
+                    <span class="f-500">
+                        #00000
+                    </span>
+                    <div class="">
+                        <span type="button" class="w-20 h-20 text-center rounded-circle lh-1"
+                            style="background-color: #000000;"></span>
+                    </div>
+                </div>
+                <ul class="list-group mt-2">
+                    <li class="list-group-item d-flex  align-items-center">
+                        <div class="f-500">
+                            Primary Color
+                        </div>
+                        <div class="d-flex gap-2 align-items-center ms-auto">
+                        <span type="button" class="w-20 h-20 text-center rounded-circle lh-1"
+                        style="background-color:#22957e;"></span>
+                            <span class="f-500">
+                                #22957e
+                            </span>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex  align-items-center">
+                        <div class="f-500">
+                            Secondary Color
+                        </div>
+                        <div class="d-flex gap-2 align-items-center ms-auto">
+                        <span type="button" class="w-20 h-20 text-center rounded-circle lh-1"
+                        style="background-color: #ff9941;"></span>
+                            <span class="f-500">
+                                #ff9941
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 p-4">
             <button type="button" class="btn btn-light"> cancel</button>

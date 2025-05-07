@@ -2,8 +2,8 @@
     --bs-body-color-rgb: 26, 24, 35;
     --bs-display-none: none;
     --bs-display-block: block;
-    --bs-light: #E4EDEC ;
-    --bs-light-rgb: 228, 237, 236;
+    --bs-light: #DEF5F0;
+    --bs-light-rgb: 222, 245, 240;
     --bs-dark: #1E2B28;
     --bs-dark-rgb: 30, 43, 40;
     --bs-dark-blue: #022642;
@@ -42,7 +42,6 @@
     --bs-warning: #f1b45c;
     --bs-danger: #fd4967;
     --bs-info: #25A1FF;
-    --bs-light: #E4EDEC;
     --bs-white: #ffffff;
     --bs-tertiary:#87C441;
     --bs-text-muted: #919CA7;

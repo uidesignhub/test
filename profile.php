@@ -32,7 +32,17 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#setting2" role="tab">
-                                    <div class="f-500">Pages</div>
+                                    <div class="f-500">Organization Member</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#setting3" role="tab">
+                                    <div class="f-500">Plan & Billing</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#setting4" role="tab">
+                                    <div class="f-500">Developer App</div>
                                 </a>
                             </li>
                         </ul>
@@ -128,9 +138,158 @@
                             <div class="tab-pane" id="setting22" role="tabpanel">
                                 ccc
                             </div>
+
                         </div>
                     </div>
-                    <div class="tab-pane" id="setting2" role="tabpanel">22</div>
+                    <div class="tab-pane" id="setting2" role="tabpanel">
+                    <div class="row mb-5">
+<div class="col-sm-auto">
+
+                                <h5 class="f-600">Organization Members</h5>
+                                <div class="text-muted">Invite people and assign organization roles</div>
+</div>
+<div class="col-lg-3">
+    <div class="d-sm-flex gap-3 mb-3">
+
+    <div class="dropdown flex-fill w-100 mb-3 mb-sm-0">
+                                                <button type="button"
+                                                    class="btn border w-100 d-flex justify-content-between"
+                                                    id="page-header-notifications-dropdown" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <span class="f-600">All</span>
+                                                    <i data-lucide="chevron-down" class="h-20"></i>
+
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 w-100"
+                                                    aria-labelledby="page-header-notifications-dropdown">
+                                                    <div data-simplebar style="max-height: 250px;">
+                                                        <div class=" p-3">
+
+                                                            <form class="w-100 mb-3">
+                                                                <div class="search-box  d-block w-100">
+                                                                    <div class="position-relative">
+                                                                        <i data-lucide="search"
+                                                                            class="position-absolute start-0 h-20 m-2"></i>
+                                                                        <input type="text" class="form-control ps-5"
+                                                                            placeholder="Search...">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                            <ul class="nav  nav-pills gap-2" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-bs-toggle="tab"
+                                                                        href="#all" role="tab">
+                                                                        <div class="">All</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-bs-toggle="tab"
+                                                                        href="#private" role="tab">
+                                                                        <div class="">Private</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item ">
+                                                                    <a class="nav-link" data-bs-toggle="tab"
+                                                                        href="#shared" role="tab">
+                                                                        <div class="">Shared</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane active" id="all" role="tabpanel">
+                                                                <div class="text-reset dropdown-item p-3">
+                                                                    <div class="d-flex  align-items-center">
+                                                                        <div class="col-7">
+                                                                            <div class="text-sm f-500 text-dark">
+                                                                                Workspace-01</div>
+                                                                            <div
+                                                                                class="text-muted text-xs text-truncate">
+                                                                                Created on 11 April,2025</div>
+                                                                        </div>
+                                                                        <button type="button"
+                                                                            class="btn btn-sm btn-primary align-self-end ms-auto " data-bs-toggle="offcanvas" data-bs-target="#offcanvasInvite"
+                                                                            aria-controls="offcanvasRight"><i
+                                                                                data-lucide="user-plus"
+                                                                                class="me-1 w-16"></i> Invite</button>
+                                                                    </div>
+</div>
+                                                                <div
+                                                                    class="text-reset dropdown-item border-top p-3">
+                                                                    <div class="d-flex  align-items-center">
+                                                                        <div class="col-7">
+                                                                            <div class="text-sm f-500 text-dark">
+                                                                                Workspace-01</div>
+                                                                            <div
+                                                                                class="text-muted text-xs text-truncate">
+                                                                                Created on 11 April,2025</div>
+                                                                        </div>
+                                                                        <button type="button"
+                                                                            class="btn btn-sm btn-light align-self-end ms-auto"><i
+                                                                                data-lucide="user-plus"
+                                                                                class="me-1 w-16"></i> Invite</button>
+                                                                    </div>
+</div>
+                                                            </div>
+                                                            <div class="tab-pane" id="private" role="tabpanel">private
+                                                                tab</div>
+                                                            <div class="tab-pane" id="shared" role="tabpanel">shared tab
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="p-2 border-top d-grid">
+                                                        <a class="btn btn-sm btn-link btn-block text-center"
+                                                            href="javascript:void(0)">
+                                                            <span>Manage Workspace/Members</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+</div>
+</div>
+<div class="col-lg-4 ms-auto">
+    <div class="row justify-content-sm-end"><div class=" col-sm-6">
+<div class="progress h-38">
+  <div class="progress-bar progress-bar-striped progress-bar-animated flex-row gap-2 align-items-center bg-soft-danger text-dark" role="progressbar" style="width: 75%;" aria-valuenow="8/10" aria-valuemin="0" aria-valuemax="100">Editors Seat <span>8/10</span></div>
+</div>
+</div>
+<div class="col-sm-auto">
+<button type="button" class="btn btn-secondary"><i data-lucide="user-plus"></i> Invite Member</button>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex align-items-center">
+<div class="d-flex mb-3">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <div class="me-3 h-38 w-38 rounded-circle overflow-hidden d-flex flex-center flex-shrink-0 bg-dark text-xs text-white f-400 justify-content-center align-items-center">
+                            UE
+                        </div>
+                        <div class="">
+                            <a href="#" class="f-500 text-dark">Utlabore Etdolore</a>
+                            <div class="text-muted text-xs">Android Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
+                <select class="form-select">
+                                <option>Editor</option>
+                                <option>Large select</option>
+                                <option>Small select</option>
+                            </select>
+                            <button class="btn btn-link"><i data-lucide="trash-2" class="text-danger"></i></button>
+                </div>
+</div>                  
+<hr>
+</div>
+                    <div class="tab-pane" id="setting3" role="tabpanel">
+                                plan & billing
+                            </div>
+                            <div class="tab-pane" id="setting4" role="tabpanel">
+                                developer app
+                            </div>
                 </div>
                 <div class="row">
                     <div class="col-12">

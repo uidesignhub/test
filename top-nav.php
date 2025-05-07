@@ -172,6 +172,7 @@
         </div>
     </div>
 </header>
+<!-- user profile setting offcanvas -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
@@ -191,11 +192,11 @@
         <div class="my-4">
             <h6 class="f-600">Organization</h6>
             <div class="my-4">
-                <a class="dropdown-item p-2" href="#">
+                <a class="dropdown-item p-2" href="profile.php">
                     <i data-lucide="user-cog"></i>
                     Admin Setting
                 </a>
-                <a class="dropdown-item p-2" href="#">
+                <a class="dropdown-item p-2" href="Profile.php">
                     <i data-lucide="square-user-round"></i>
                     Organization Members
                 </a>
